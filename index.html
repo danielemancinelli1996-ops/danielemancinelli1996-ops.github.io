@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniele Mancinelli | Academic Website</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #253245;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    nav {
+      padding: 22px 10%;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav .brand {
+      font-weight: bold;
+      font-size: 19px;
+    }
+
+    nav a {
+      color: #344054;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 65px auto;
+      padding: 0 30px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 55px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #172033;
+    }
+
+    .subtitle {
+      font-size: 19px;
+      color: #64748b;
+      margin-bottom: 30px;
+    }
+
+    .bio {
+      font-size: 17px;
+      line-height: 1.9;
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    .hero-image {
+      flex: 0 0 240px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .hero-image img {
+      width: 230px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #e5e7eb;
+      color: #64748b;
+      font-size: 13px;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 20px 5%;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 25px;
+      }
+
+      .hero-image {
+        text-align: left;
+      }
+
+      .hero-text h1 {
+        font-size: 34px;
+      }
+
+      .bio {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="brand">Daniele Mancinelli</div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+
+      <div class="hero-text">
+
+        <h1>Daniele Mancinelli</h1>
+
+        <div class="subtitle">
+          Assistant Professor (Tenure-track)<br>
+          Department of Economics and Finance<br>
+          University of Rome Tor Vergata
+        </div>
+
+        <p class="bio">I am an Assistant Professor (Tenure-track) at the Department of Economics and Finance, University of Rome Tor Vergata. Previously, I was a Researcher (RTD-A) at the Department of Mathematics, Politecnico di Milano, and a Post-doctoral Fellow at the Department of Economics and Finance, University of Rome Tor Vergata, under the supervision of Prof. Katia Colaneri. I received my Ph.D. in Models for Economics and Finance from Sapienza University of Rome, under the supervision of Prof. Immacolata Oliva. My research interests focus on stochastic control theory, stochastic differential games, mathematical finance, insurance mathematics, pension funds, portfolio optimization, and quantitative methods for green finance, with applications to economics and finance.</p>
+
+        <div class="links">
+          <a href="mailto:daniele.mancinelli@polimi.it">
+            Email
+          </a>
+
+          <a href="https://orcid.org/0000-0003-3854-2414"
+             target="_blank"
+             rel="noopener noreferrer">
+            ORCID
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="profile.jpg"
+             alt="Daniele Mancinelli">
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    Daniele Mancinelli |
+    University of Rome Tor Vergata
+  </footer>
+
+</body>
+</html>
