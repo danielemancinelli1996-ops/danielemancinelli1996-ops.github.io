@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Publications | Daniele Mancinelli</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #D7F0FC;
+  color: #173B54;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+/* Navigation */
+
+nav {
+  max-width: 1500px;
+  margin: auto;
+  padding: 35px 45px;
+  display: flex;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #577B91;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #173B54;
+}
+
+nav a.active {
+  font-style: italic;
+}
+
+/* Main content */
+
+main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 25px 45px 80px;
+}
+
+.content {
+  max-width: 920px;
+}
+
+h1 {
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin: 10px 0 30px;
+}
+
+/* Search */
+
+.search-box {
+  width: 100%;
+  padding: 20px 28px;
+  font-size: 21px;
+  color: #173B54;
+  background-color: #ECF9FF;
+  border: 1px solid #A9CBDE;
+  border-radius: 18px;
+  outline: none;
+  margin-bottom: 42px;
+}
+
+.search-box::placeholder {
+  color: #7896A8;
+}
+
+.search-box:focus {
+  border-color: #3488AD;
+}
+
+/* Year accordion */
+
+.year-group {
+  border-bottom: 1px solid #A9CBDE;
+}
+
+.year-group summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 0;
+  font-size: 31px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.year-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.year-group summary::before {
+  content: "▶";
+  font-size: 16px;
+  color: #1598B5;
+  transition: transform 0.2s;
+}
+
+.year-group[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.year-group summary:hover {
+  color: #157A9E;
+}
+
+/* Publication entries */
+
+.publications-list {
+  padding: 0 0 25px 38px;
+}
+
+.publication {
+  margin-bottom: 28px;
+  padding-left: 20px;
+  border-left: 3px solid #83BCD5;
+}
+
+.publication-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.publication-authors {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.publication-journal {
+  font-size: 17px;
+  font-style: italic;
+  color: #42667F;
+  margin-bottom: 8px;
+}
+
+.publication a {
+  font-size: 16px;
+  color: #0879A8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.publication a:hover {
+  color: #064E72;
+}
+
+.publication-type {
+  font-size: 15px;
+  color: #42667F;
+  font-style: italic;
+}
+
+#no-results {
+  display: none;
+  font-size: 19px;
+  color: #42667F;
+  padding-top: 25px;
+}
+
+/* Footer */
+
+footer {
+  max-width: 1500px;
+  margin: 30px auto 0;
+  padding: 25px 45px 40px;
+}
+
+.footer-line {
+  border-top: 1px solid #A9CBDE;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #116A91;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Mobile version */
+
+@media (max-width: 900px) {
+
+  nav {
+    padding: 25px;
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 20px 25px;
+  }
+
+  h1 {
+    font-size: 43px;
+  }
+
+  .search-box {
+    font-size: 16px;
+    padding: 16px 18px;
+  }
+
+  .year-group summary {
+    font-size: 25px;
+  }
+
+  .publications-list {
+    padding-left: 10px;
+  }
+
+  .publication-title {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navigation menu -->
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="publications.html" class="active">
+    Publications
+  </a>
+  <a href="activities.html">Activities</a>
+</nav>
+
+<main>
+
+<div class="content">
+
+<h1>Publications</h1>
+
+<!-- Search bar -->
+
+<input
+  type="search"
+  id="search"
+  class="search-box"
+  placeholder="Search by title, author, or keyword..."
+  aria-label="Search publications"
+>
+
+<!-- YEAR 2026 -->
+
+<details class="year-group">
+
+<summary>2026</summary>
+
+<div class="publications-list">
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Carbon-Penalised Portfolio Insurance
+      Strategies in a Stochastic Factor Model
+      with Partial Information
+    </div>
+
+    <div class="publication-authors">
+      K. Colaneri, F. D'Amario, D. Mancinelli
+    </div>
+
+    <div class="publication-journal">
+      Scandinavian Actuarial Journal, 2026
+    </div>
+
+    <a href="https://doi.org/10.1080/03461238.2026.2682367"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+</div>
+</details>
+
+
+<!-- YEAR 2025 -->
+
+<details class="year-group">
+
+<summary>2025</summary>
+
+<div class="publications-list">
+
+  <div class="publication">
+
+    <div class="publication-title">
+      On the Optimal Design of a New Class
+      of Proportional Portfolio Insurance
+      Strategy in a Jump-Diffusion Framework
+    </div>
+
+    <div class="publication-authors">
+      K. Colaneri, D. Mancinelli, I. Oliva
+    </div>
+
+    <div class="publication-journal">
+      Scandinavian Actuarial Journal, 2025
+    </div>
+
+    <a href="https://doi.org/10.1080/03461238.2025.2478443"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Editorial: Financial Modeling with Frictions
+    </div>
+
+    <div class="publication-authors">
+      D. Mancinelli, A. Mazzon,
+      I. Oliva, I. Stefani
+    </div>
+
+    <div class="publication-journal">
+      Frontiers in Applied Mathematics and Statistics,
+      2025
+    </div>
+
+    <a href="https://doi.org/10.3389/fams.2025.1641147"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Carbon-Sensitive Fund Construction
+      and Hedging for Green Unit-Linked
+      Life Insurance
+    </div>
+
+    <div class="publication-authors">
+      K. Colaneri, A. Cretarola,
+      E. Lombardo, D. Mancinelli
+    </div>
+
+    <div class="publication-journal">
+      arXiv Preprint, 2025
+    </div>
+
+    <div class="publication-type">
+      Preprint — Under review
+    </div>
+
+    <a href="https://doi.org/10.48550/arXiv.2509.05676"
+       target="_blank"
+       rel="noopener noreferrer">
+       arXiv
+    </a>
+
+  </div>
+
+</div>
+</details>
+
+
+<!-- YEAR 2024 -->
+
+<details class="year-group">
+
+<summary>2024</summary>
+
+<div class="publications-list">
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Pension Fund with Longevity Risk:
+      An Optimal Portfolio Insurance Approach
+    </div>
+
+    <div class="publication-authors">
+      M. Di Giacinto, D. Mancinelli,
+      M. Marino, I. Oliva
+    </div>
+
+    <div class="publication-journal">
+      Insurance: Mathematics and Economics, 2024
+    </div>
+
+    <a href="https://doi.org/10.1016/j.insmatheco.2024.10.001"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+</div>
+</details>
+
+
+<!-- YEAR 2023 -->
+
+<details class="year-group">
+
+<summary>2023</summary>
+
+<div class="publications-list">
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Time-Invariant Portfolio Strategies
+      in Structured Products with Guaranteed
+      Minimum Equity Exposure
+    </div>
+
+    <div class="publication-authors">
+      L. Di Persio, D. Mancinelli,
+      I. Oliva, K. Wallbaum
+    </div>
+
+    <div class="publication-journal">
+      Applied Stochastic Models in Business
+      and Industry, 2023
+    </div>
+
+    <a href="https://doi.org/10.1002/asmb.2805"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Constant or Variable? A Performance
+      Analysis among Portfolio Insurance
+      Strategies
+    </div>
+
+    <div class="publication-authors">
+      D. Mancinelli, I. Oliva
+    </div>
+
+    <div class="publication-journal">
+      Risks, 2023
+    </div>
+
+    <a href="https://doi.org/10.3390/risks11060105"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+</div>
+</details>
+
+
+<!-- YEAR 2022 -->
+
+<details class="year-group">
+
+<summary>2022</summary>
+
+<div class="publications-list">
+
+  <div class="publication">
+
+    <div class="publication-title">
+      Managing Cash-in Risk Embedded in
+      Portfolio Insurance Strategies: A Review
+    </div>
+
+    <div class="publication-authors">
+      D. Mancinelli
+    </div>
+
+    <div class="publication-journal">
+      Annali del Dipartimento di Metodi e Modelli
+      per l'Economia, il Territorio e la Finanza,
+      2022
+    </div>
+
+    <a href="https://doi.org/10.13133/2611-6634/1414"
+       target="_blank"
+       rel="noopener noreferrer">
+       DOI
+    </a>
+
+  </div>
+
+</div>
+</details>
+
+<p id="no-results">
+  No publications found.
+</p>
+
+</div>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="footer-line"></div>
+
+<div class="footer-links">
+
+  <a href="CV.pdf"
+     target="_blank"
+     rel="noopener noreferrer">
+     CV
+  </a>
+
+  <a href="https://scholar.google.com/"
+     target="_blank"
+     rel="noopener noreferrer">
+     Google Scholar
+  </a>
+
+  <a href="https://orcid.org/0000-0003-3854-2414"
+     target="_blank"
+     rel="noopener noreferrer">
+     ORCID
+  </a>
+
+  <a href="mailto:daniele.mancinelli@polimi.it">
+     Email
+  </a>
+
+</div>
+
+</footer>
+
+<!-- Search functionality -->
+
+<script>
+
+const searchInput = document.getElementById("search");
+const groups = document.querySelectorAll(".year-group");
+const noResults = document.getElementById("no-results");
+
+searchInput.addEventListener("input", function() {
+
+  const query = this.value.toLowerCase().trim();
+  let totalVisible = 0;
+
+  groups.forEach(function(group) {
+
+    const publications =
+      group.querySelectorAll(".publication");
+
+    let visibleInYear = 0;
+
+    publications.forEach(function(publication) {
+
+      const text = publication.textContent.toLowerCase();
+
+      const matches = text.includes(query);
+
+      publication.style.display =
+        matches ? "" : "none";
+
+      if (matches) {
+        visibleInYear++;
+        totalVisible++;
+      }
+
+    });
+
+    if (query === "") {
+      group.style.display = "";
+      group.open = false;
+    } else {
+      group.style.display =
+        visibleInYear > 0 ? "" : "none";
+
+      group.open = visibleInYear > 0;
+    }
+
+  });
+
+  noResults.style.display =
+    totalVisible === 0 ? "block" : "none";
+
+});
+
+</script>
+
+</body>
+</html>
