@@ -1,209 +1,245 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniele Mancinelli | Academic Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #253245;
-      background: #ffffff;
-      line-height: 1.7;
-    }
+<title>Daniele Mancinelli | Academic Website</title>
 
-    nav {
-      padding: 22px 10%;
-      border-bottom: 1px solid #e5e7eb;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+<style>
 
-    nav .brand {
-      font-weight: bold;
-      font-size: 19px;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    nav a {
-      color: #344054;
-      text-decoration: none;
-      margin-left: 18px;
-    }
+body {
+  margin: 0;
+  background-color: #D7F0FC;
+  color: #173B54;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+}
 
-    nav a:hover {
-      color: #2563eb;
-    }
+/* Navigation menu */
 
-    main {
-      max-width: 1100px;
-      margin: 65px auto;
-      padding: 0 30px;
-    }
+nav {
+  max-width: 1500px;
+  margin: auto;
+  padding: 35px 45px;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  flex-wrap: wrap;
+}
 
-    .hero {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 55px;
-    }
+nav a {
+  color: #577B91;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-    .hero-text {
-      flex: 1;
-      min-width: 0;
-    }
+nav a:hover,
+nav a.active {
+  color: #173B54;
+}
 
-    .hero-text h1 {
-      font-size: 42px;
-      margin-top: 0;
-      margin-bottom: 12px;
-      color: #172033;
-    }
+nav a.active {
+  font-style: italic;
+}
 
-    .subtitle {
-      font-size: 19px;
-      color: #64748b;
-      margin-bottom: 30px;
-    }
+/* Main layout */
 
-    .bio {
-      font-size: 17px;
-      line-height: 1.9;
-      text-align: justify;
-      margin-top: 20px;
-    }
+main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 25px 45px 60px;
+}
 
-    .hero-image {
-      flex: 0 0 240px;
-      text-align: center;
-      margin-top: 15px;
-    }
+.container {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
 
-    .hero-image img {
-      width: 230px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    }
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
 
-    .links {
-      margin-top: 30px;
-    }
+/* Name and biography */
 
-    .links a {
-      display: inline-block;
-      margin-right: 20px;
-      margin-bottom: 10px;
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
+h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  margin: 6px 0 30px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
 
-    .links a:hover {
-      text-decoration: underline;
-    }
+.bio {
+  font-size: 20px;
+  line-height: 1.95;
+  margin: 0;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      border-top: 1px solid #e5e7eb;
-      color: #64748b;
-      font-size: 13px;
-      margin-top: 80px;
-    }
+/* Photograph */
 
-    @media (max-width: 768px) {
-      nav {
-        padding: 20px 5%;
-      }
+.photo {
+  width: 100%;
+}
 
-      nav a {
-        margin-left: 0;
-        margin-right: 15px;
-      }
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 22px;
+}
 
-      .hero {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 25px;
-      }
+/* Bottom links */
 
-      .hero-image {
-        text-align: left;
-      }
+.footer-links {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid #9FC9DD;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-      .hero-text h1 {
-        font-size: 34px;
-      }
+.footer-links a {
+  color: #116A91;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
-      .bio {
-        text-align: left;
-      }
-    }
-  </style>
+.footer-links a:hover {
+  color: #173B54;
+}
+
+/* Mobile layout */
+
+@media (max-width: 900px) {
+
+  nav {
+    padding: 25px;
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 17px;
+  }
+
+  main {
+    padding: 20px 25px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .content {
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .bio {
+    font-size: 17px;
+  }
+
+  .photo {
+    max-width: 450px;
+  }
+
+  .footer-links {
+    margin-top: 35px;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    font-size: 17px;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="brand">Daniele Mancinelli</div>
+<!-- Navigation menu -->
 
-    <div>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="cv.html">CV</a>
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="publications.html">Publications</a>
+  <a href="activities.html">Activities</a>
+</nav>
+
+<!-- Homepage -->
+
+<main>
+
+  <div class="container">
+
+    <div class="content">
+
+      <h1>Daniele Mancinelli</h1>
+
+      <p class="bio">I am an Assistant Professor (Tenure-track) at the Department of Economics and Finance, University of Rome Tor Vergata. My research interests focus on stochastic control and games, with applications to portfolio optimization, pension fund design, portfolio insurance, and quantitative methods for green finance.</p>
+
+      <!-- Bottom links -->
+
+      <div class="footer-links">
+
+        <a href="CV.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          CV
+        </a>
+
+        <a href="https://scholar.google.com/citations?user=8hXtx8sAAAAJ&amp;hl=it"
+           target="_blank"
+           rel="noopener noreferrer">
+          Google Scholar
+        </a>
+
+        <a href="https://orcid.org/0000-0003-3854-2414"
+           target="_blank"
+           rel="noopener noreferrer">
+          ORCID
+        </a>
+
+        <a href="mailto:daniele.mancinelli@polimi.it">
+          Email
+        </a>
+
+      </div>
+
     </div>
-  </nav>
 
-  <main>
-    <section class="hero">
+    <!-- Profile photograph -->
 
-      <div class="hero-text">
+    <div class="photo">
+      <img src="foto.jpg" alt="Daniele Mancinelli">
+    </div>
 
-        <h1>Daniele Mancinelli</h1>
+  </div>
 
-        <div class="subtitle">
-          Assistant Professor (Tenure-track)<br>
-          Department of Economics and Finance<br>
-          University of Rome Tor Vergata
-        </div>
-
-        <p class="bio">I am an Assistant Professor (Tenure-track) at the Department of Economics and Finance, University of Rome Tor Vergata. Previously, I was a Researcher (RTD-A) at the Department of Mathematics, Politecnico di Milano, and a Post-doctoral Fellow at the Department of Economics and Finance, University of Rome Tor Vergata, under the supervision of Prof. Katia Colaneri. I received my Ph.D. in Models for Economics and Finance from Sapienza University of Rome, under the supervision of Prof. Immacolata Oliva. My research interests focus on stochastic control theory, stochastic differential games, mathematical finance, insurance mathematics, pension funds, portfolio optimization, and quantitative methods for green finance, with applications to economics and finance.</p>
-
-        <div class="links">
-          <a href="mailto:daniele.mancinelli@polimi.it">
-            Email
-          </a>
-
-          <a href="https://orcid.org/0000-0003-3854-2414"
-             target="_blank"
-             rel="noopener noreferrer">
-            ORCID
-          </a>
-        </div>
-
-      </div>
-
-      <div class="hero-image">
-        <img src="foto.jpg"
-             alt="Daniele Mancinelli">
-      </div>
-
-    </section>
-  </main>
-
-  <footer>
-    Daniele Mancinelli |
-    University of Rome Tor Vergata
-  </footer>
+</main>
 
 </body>
 </html>
+
