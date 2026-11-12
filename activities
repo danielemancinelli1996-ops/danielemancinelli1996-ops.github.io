@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities | Daniele Mancinelli</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #D7F0FC;
+      color: #173B54;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
+    }
+
+    nav, main {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
+    nav {
+      display: flex;
+      gap: 42px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+
+    nav a {
+      color: #577B91;
+      font-size: 21px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #173B54;
+    }
+
+    nav a.active {
+      font-style: italic;
+    }
+
+    main {
+      padding-top: 25px;
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .activity-link {
+      font-size: 21px;
+      color: #116A91;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .activity-link:hover {
+      color: #173B54;
+    }
+
+    @media (max-width: 900px) {
+      nav, main {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      nav a {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="activities.html" class="active">Activities</a>
+  </nav>
+
+  <main>
+
+    <h1>Activities</h1>
+
+    <section>
+      <h2>Terza Missione</h2>
+
+      <p>
+        <a class="activity-link"
+           href="laboratorio-del-caso/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Il laboratorio del caso
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
